@@ -29,4 +29,3 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 include $(LOCAL_PATH)/kernel.mk
 include $(LOCAL_PATH)/twrp.mk
-include device/generic/twrpbuilder/BoardConfig32.mk
