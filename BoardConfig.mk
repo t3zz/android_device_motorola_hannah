@@ -19,20 +19,14 @@ LOCAL_PATH := device/motorola/hannah
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOOTLOADER_BOARD_NAME := hannah
 
-# Recovery
-TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824
-BOARD_FLASH_BLOCK_SIZE := 0
-BOARD_HAS_NO_REAL_SDCARD := true
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_RECOVERY_SWIPE := true
-BOARD_USES_MMCUTILS := true
-BOARD_SUPPRESS_EMMC_WIPE := true
-TW_EXCLUDE_SUPERSU := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_INCLUDE_CRYPTO := true
-include $(LOCAL_PATH)/kernel.mk
-include device/generic/twrpbuilder/BoardConfig32.mk
+# Platform Info
+TARGET_ARCH := arm
+TARGET_CPU_ABI := armeabi-v7a
 
+# System Images
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
+include $(LOCAL_PATH)/kernel.mk
+include $(LOCAL_PATH)/twrp.mk
+include device/generic/twrpbuilder/BoardConfig32.mk

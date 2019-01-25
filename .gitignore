@@ -1,0 +1,5 @@
+# ignore these files
+*.swp
+*.tmp
+*.o
+
