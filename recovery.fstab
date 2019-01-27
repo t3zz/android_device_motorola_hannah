@@ -5,6 +5,8 @@
 /cache ext4 /dev/block/mmcblk0p54 flags=display="CACHE"
 /recovery emmc /dev/block/mmcblk0p38 flags=display="RECOVERY"
 /external_sd vfat /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="EXTERNAL SD";storage;wipeingui;removable
+/vendor ext4 /dev/block/mmcblk0p53 flags=display="VENDOR"
+/persist ext4 /dev/block/mmcblk0p30 flags=display="PERSIST"
 /devices/soc/78db000.usb/msm_hsusb_host*           auto         auto    defaults                 voldmanaged=usb:auto
 /devices/soc/7864900.sdhci/mmc_host*       auto  auto    nosuid,nodev                          wait,voldmanaged=sdcard1:auto,encryptable=userdata
 /dev/block/zram0             none         swap    defaults zramsize=536870912
