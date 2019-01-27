@@ -15,4 +15,4 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TW_EXCLUDE_SUPERSU := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_INCLUDE_CRYPTO := true
-include device/generic/twrpbuilder/BoardConfig32.mk
+include device/generic/twrpbuilder/BoardConfig64.mk
